@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "PT Serif", serif;
+}
+
+body {
+  background-color: #1a1919;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 10px;
+  /* overflow: hidden; */
+}
+
+.original {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+  margin: 20px;
+  margin-left: 70px;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(15deg, rgb(228, 0, 0), rgb(230, 168, 178), rgb(0, 0, 252));
+  border-radius: 55px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Merriweather', "PT Serif", sans-serif;
+  font-style: italic;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 45px;
+  color: hsl(0deg 0% 95.42% / 68%);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.about {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(255 255 255)
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 10px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  border: none;
+  border-radius: 18px;
+  height: 25px;
+  width: 430px;
+  padding: 10px;
+  margin: 10px 0;
+  transition: border 0.3s ease;
+}
+
+textarea {
+  height: 60px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+.redactbtn, .resetbtn {
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, rgb(0, 0, 252), rgb(228, 0, 0));
+  color: #fff;
+  height: 40px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.redacted {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 15px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .original {
+    display: flex;
+    flex-direction: column;
+  }
+}
