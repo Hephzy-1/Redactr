@@ -112,9 +112,14 @@ textarea {
   padding: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media (min-width: 350px) and (max-width: 1000px) {
   .original {
     display: flex;
     flex-direction: column;
+    margin: 10px;
+  }
+
+  input, textarea {
+    width: 230px;
   }
 }
